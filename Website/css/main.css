@@ -58,7 +58,8 @@ html {
       border-radius: 50%;
       /* height:100%; */
       border: 5px solid rgb(243, 243, 243);
-      background-image: url(../images/index.jpg);
+      background-image: url(../images/circle.jpeg);
+      background-repeat: no-repeat;
     }
     rectangle { 
       grid-area: rectangle;
@@ -67,7 +68,7 @@ html {
       height: 150px;
       /* height:100%; */
       border: 5px solid rgb(255, 255, 255);   
-      background-image: url(../images/index.jpg);
+      background-image: url(../images/rectangle.jpg);
     }
     square { 
       grid-area: square;
@@ -89,18 +90,19 @@ html {
       border-right: 50px solid transparent;
       border-bottom: 100px solid red;
       
+      
 
       /* height:100%; */
     }
-      triangle.empty { 
+      /* triangle.empty { 
         grid-area: triangle;
         width: 0;
         height: 0;
         border-left: 50px solid transparent;
         border-right: 50px solid transparent;
-        border-bottom: 100px solid red;
+        border-bottom: 100px solid red; */
         /* height:100%; */
-      }
+      /* } */
 .modal {
   position: fixed;
   top: 50%;
@@ -155,21 +157,33 @@ html {
   height: 250px;
   border: 6px solid orange;
 }
-.image { 
+
+.image--circle {
   border: 5px solid lightgreen;
   width: 30%;
+  background-image: url(../images/circle.jpeg);
+  background-repeat: no-repeat;
 }
-.image .circle {
-  background-image: url(../images/dab.jpg);
+.image--rectangle {
+  border: 5px solid lightgreen;
+  width: 30%;
+  background-image: url(../images/rectangle.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.image .rectangle {
+.image--square {
+  border: 5px solid lightgreen;
+  width: 30%;
   background-image: url(../images/dab.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.image .square {
+.image--triangle {
+  border: 5px solid lightgreen;
+  width: 30%;
   background-image: url(../images/dab.jpg);
-}
-.image .triangle {
-  background-image: url(../images/dab.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #overlay { 
